@@ -7,4 +7,7 @@ angular.module('quoteBook').controller('mainCtrl', function($scope, dataService)
         };
         dataService.addData(newQuote);
     }
+    $scope.removeQuote = function(text){
+        dataService.removeData(text)
+    }
 })
